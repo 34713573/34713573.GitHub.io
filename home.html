@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="普宁市流沙新世界中英文学校官方网站">
+    <meta name="keywords" content="普宁,流沙,新世界,中英文学校,双语教育">
+    <title>普宁市流沙新世界中英文学校</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="assets/css/style.css" rel="stylesheet">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="assets/images/logo.jpg" alt="学校Logo" height="50">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#" data-lang-key="nav.home">首页</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-lang-key="nav.about">学校概况</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-lang-key="nav.courses">课程体系</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-lang-key="nav.faculty">师资力量</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-lang-key="nav.life">校园生活</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-lang-key="nav.news">新闻动态</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-lang-key="nav.contact">联系我们</a>
+                    </li>
+                </ul>
+                <button class="btn btn-outline-primary" id="langToggle" onclick="toggleLanguage()">
+                    <span data-lang-key="nav.switchLang">EN</span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 轮播图 -->
+    <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="assets/images/slide1.jpg.svg" class="d-block w-100" alt="校园环境">
+                <div class="carousel-caption">
+                    <h2 data-lang-key="carousel.slide1.title">培养优秀中学生的摇篮</h2>
+                    <p data-lang-key="carousel.slide1.desc">德智体美劳全面发展</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="assets/images/slide2.jpg.svg" class="d-block w-100" alt="教学活动">
+                <div class="carousel-caption">
+                    <h2 data-lang-key="carousel.slide2.title">特色双语教学体系</h2>
+                    <p data-lang-key="carousel.slide2.desc">初高中课程完美衔接</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="assets/images/slide3.jpg.svg" class="d-block w-100" alt="学生活动">
+                <div class="carousel-caption">
+                    <h2 data-lang-key="carousel.slide3.title">丰富多彩的校园生活</h2>
+                    <p data-lang-key="carousel.slide3.desc">培养学生全面发展</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 快速入口 -->
+    <section class="features py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="feature-card text-center p-4 shadow-sm rounded">
+                        <i class="fas fa-graduation-cap fa-3x text-primary mb-3"></i>
+                        <h3 data-lang-key="features.courses">特色课程</h3>
+                        <p data-lang-key="features.courses.desc">特色课程体系，中西教育结合</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="feature-card text-center p-4 shadow-sm rounded">
+                        <i class="fas fa-edit fa-3x text-primary mb-3"></i>
+                        <h3 data-lang-key="features.apply">在线报名</h3>
+                        <p data-lang-key="features.apply.desc">便捷的初高中在线报名系统</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="feature-card text-center p-4 shadow-sm rounded">
+                        <i class="fas fa-users fa-3x text-primary mb-3"></i>
+                        <h3 data-lang-key="features.activities">学生活动</h3>
+                        <p data-lang-key="features.activities.desc">丰富的社团活动，促进学生成长</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="feature-card text-center p-4 shadow-sm rounded">
+                        <i class="fas fa-globe fa-3x text-primary mb-3"></i>
+                        <h3 data-lang-key="features.exchange">国际交流</h3>
+                        <p data-lang-key="features.exchange.desc">优质的中外交流项目，开拓视野</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="feature-card text-center p-4 shadow-sm rounded">
+                        <i class="fas fa-compass fa-3x text-primary mb-3"></i>
+                        <h3 data-lang-key="features.guidance">升学指导</h3>
+                        <p data-lang-key="features.guidance.desc">专业的高考升学指导，助力学子圆梦</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="feature-card text-center p-4 shadow-sm rounded">
+                        <i class="fas fa-chalkboard-teacher fa-3x text-primary mb-3"></i>
+                        <h3 data-lang-key="features.teaching">教学特色</h3>
+                        <p data-lang-key="features.teaching.desc">创新的教学模式，培养学习兴趣</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="bg-dark text-light py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5 data-lang-key="footer.contact">联系方式</h5>
+                    <p data-lang-key="footer.address">地址：广东省揭阳市普宁市流沙</p>
+                    <p data-lang-key="footer.phone">电话：0663-XXXXXXX</p>
+                    <p data-lang-key="footer.email">邮箱：contact@example.com</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p class="mb-0" data-lang-key="footer.copyright">© 2024 普宁市流沙新世界中英文学校. 版权所有.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/i18n.js"></script>
+</body>
+</html>

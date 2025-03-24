@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
+    <!-- 背景 -->
+    <rect width="1920" height="1080" fill="#f8f9fa"/>
+    
+    <!-- 教室场景 -->
+    <rect x="200" y="300" width="800" height="400" fill="#007BFF" opacity="0.1"/>
+    
+    <!-- 黑板 -->
+    <rect x="300" y="350" width="600" height="300" fill="#343a40"/>
+    <text x="600" y="500" font-family="Arial" font-size="32" fill="white" text-anchor="middle">English Class</text>
+    
+    <!-- 教师形象 -->
+    <circle cx="450" cy="800" r="50" fill="#007BFF"/>
+    <rect x="425" y="850" width="50" height="100" fill="#007BFF"/>
+    
+    <!-- 学生形象 -->
+    <g transform="translate(600,800)">
+        <circle cx="0" cy="0" r="30" fill="#28a745"/>
+        <rect x="-15" y="30" width="30" height="60" fill="#28a745"/>
+    </g>
+    <g transform="translate(700,800)">
+        <circle cx="0" cy="0" r="30" fill="#28a745"/>
+        <rect x="-15" y="30" width="30" height="60" fill="#28a745"/>
+    </g>
+    <g transform="translate(800,800)">
+        <circle cx="0" cy="0" r="30" fill="#28a745"/>
+        <rect x="-15" y="30" width="30" height="60" fill="#28a745"/>
+    </g>
+    
+    <!-- 装饰元素 -->
+    <text x="1200" y="400" font-family="Microsoft YaHei" font-size="64" fill="#007BFF" opacity="0.2">双语教学</text>
+    <text x="1200" y="500" font-family="Arial" font-size="64" fill="#007BFF" opacity="0.2">Bilingual</text>
+    
+    <!-- 教学用品 -->
+    <rect x="900" y="700" width="40" height="60" fill="#ffc107"/> <!-- 书本 -->
+    <circle cx="1000" cy="730" r="20" fill="#dc3545"/> <!-- 地球仪 -->
+</svg>
